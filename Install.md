@@ -1,7 +1,7 @@
-# Install Scripts
+# GCloud Commands
 
 
-### Install
+### Install GCloud
 
     ./google-cloud-sdk/install.sh
 
