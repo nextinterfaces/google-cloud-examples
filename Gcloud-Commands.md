@@ -1,4 +1,4 @@
-# GCloud Commands
+# Gcloud Commands
 
 
 ### Install GCloud
