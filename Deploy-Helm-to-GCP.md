@@ -66,6 +66,14 @@ Check access
     -> NAME       TYPE           CLUSTER-IP       EXTERNAL-IP      PORT(S)                      AGE
     -> my-nginx   LoadBalancer   34.118.236.151   34.135.118.232   80:30271/TCP,443:31089/TCP   2m11s
 
+```shell
+export SERVICE_PORT=$(kubectl get --namespace web-test -o jsonpath="{.spec.ports[0].port}" services my-nginx)
+export SERVICE_IP=$(kubectl get svc --namespace web-test my-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+curl "http://${SERVICE_IP}:${SERVICE_PORT}"
+echo "http://${SERVICE_IP}:${SERVICE_PORT}"
+```
+
+
 ### ✅ Step 7: Cleanup (Optional)
 
     helm uninstall my-nginx -n web-test
