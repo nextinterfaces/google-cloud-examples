@@ -9,7 +9,6 @@ gcloud compute zones list | grep europe-central2
 
 gcloud config set compute/zone europe-central2-a # warsaw
 
-
 gcloud compute instances list
 
 NAME                      ZONE               MACHINE_TYPE  PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP     STATUS
