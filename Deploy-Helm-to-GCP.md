@@ -59,7 +59,7 @@ Check access
 
 ### ✅ Step 5: Verify and Access
 
-    kubectl get svc -n web --watch
+    kubectl get svc -n web-test --watch
 
     kubectl get svc --namespace web-test -w my-nginx
 
