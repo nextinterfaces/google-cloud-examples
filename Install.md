@@ -8,7 +8,7 @@
 ### List authenticated accounts
     gcloud auth list
          Credentialed Accounts
-    ACTIVE  ACCOUNT
+    ACTIVE  ACCOUNT 
             <some-othr-account>@redis.com
     *       <my-active-account>@gmail.com
 
